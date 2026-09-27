@@ -1,0 +1,180 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Font Family & Base */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0a0a0f;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6,
+.navbar-brand,
+.btn-outline-gold {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.glass-nav {
+  background: rgba(10, 10, 15, 0.7) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(200, 157, 60, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .nav-link {
+  color: #ffffff !important;
+  transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* Hero Section (Intro) */
+.hero-intro,
+.hero-landing,
+.hogwartssecond-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../img/landing2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-intro::before,
+.hero-landing::before,
+.hogwartssecond-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+
+/* Movies Section */
+.hero-movies,
+.hogwarts-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../img/landing.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-movies::before,
+.hogwarts-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* About Section */
+.hero-about,
+.hogwarts-hero2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../img/trains.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero-about::before,
+.hogwarts-hero2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(10, 10, 15, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Gold Text & Buttons */
+.text-gold {
+  color: #d4af37 !important;
+}
+
+.btn-outline-gold {
+  color: #d4af37 !important;
+  border: 1px solid #d4af37 !important;
+}
+
+.btn-outline-gold:hover {
+  background-color: #d4af37 !important;
+  color: #111111 !important;
+}
+
+/* Video & Image Frames */
+.ratio {
+  border: 1px solid #c89d3c;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Login/Signup Logo & Form Icons */
+.hogwarts-logo {
+  max-width: 100px;
+  height: auto;
+  margin: auto;
+  display: block;
+  filter: drop-shadow(0 0 5px rgba(221, 183, 60, 0.7));
+}
+
+.right-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.25rem;
+  pointer-events: none;
+  color: #d4af37;
+  z-index: 5;
+}
+
+/* Carousel Arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  z-index: 10;
+  cursor: pointer;
+  color: #c89d3c;
+  font-size: 2.2rem;
+  opacity: 0.8;
+  transition: all 0.2s ease;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: #e6c875;
+  opacity: 1;
+  transform: scale(1.1);
+}
